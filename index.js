@@ -5,6 +5,10 @@ let seconds = document.querySelector(".seconds");
 let tem_sec = 0;
 let tem_min = parseInt(prompt("Enter  Minutes: "));
 let tem_hou = parseInt(prompt("Enter Hours :"));
+
+hours.innerText = tem_hou;
+minutes.innerText = tem_min;
+
 let clear_counter = setInterval(() => {
     tem_sec -= 1;
     if (tem_sec == 0 && tem_min == 0 && tem_hou == 0) {
